@@ -2,7 +2,10 @@
   "builds": [
     {
       "src": "nuxt.config.js",
-      "use": "@vercel/node" // Use Vercel's Node.js builder
+      "use": "@nuxt/engine",
+      "config": {
+        "target": "server"
+      }
     }
   ],
   "routes": [
